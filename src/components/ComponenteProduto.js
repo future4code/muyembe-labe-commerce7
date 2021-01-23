@@ -10,12 +10,6 @@ class ComponenteProduto extends React.Component {
       };
     
       onClickAdicionarCarrinho = () => {
-        
-       /* let carrinhoCompras
-    
-        if(this.state.adicionado) {
-          carrinhoCompras = carrinhoCompras.push(props.produto)
-        }*/
     
         this.setState({
           adicionado:true
@@ -44,8 +38,8 @@ class ComponenteProduto extends React.Component {
               </div>
 
               <div className="produto-footer">
-                <p>{this.props.nomeProduto}</p>
-                <p>{this.props.preco}</p>
+                <h4>{this.props.nomeProduto}</h4>
+                <h4>{this.props.preco}</h4>
                 
                 <button onClick={this.onClickAdicionarCarrinho}>
                   <img
